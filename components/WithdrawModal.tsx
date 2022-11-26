@@ -555,6 +555,7 @@ let res = config.markets[0].reserves.find(
     )
    let transaction = new Transaction().add(
       redeemReserveCollateralInstruction(
+        // @ts-ignore
         Number(inputAmount) * 10 ** res.decimals,//    Math.floor(oos[res]  * 1000) / 1000,
         userCollateralAccountAddress,
         tokenAccount.account.pubkey,        // @ts-ignore
@@ -571,6 +572,7 @@ let res = config.markets[0].reserves.find(
           "E4AifNCQZzPjE1pTjAWS8ii4ovLNruSGsdWRMBSq2wBa"
         )    ))
     console.log(
+        // @ts-ignore
       Number(inputAmount) * 10 ** res.decimals,//    Math.floor(oos[res]  * 1000) / 1000,
       userCollateralAccountAddress,
       tokenAccount.account.pubkey,
